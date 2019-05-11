@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1968A94422868B5400665356 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A94322868B5400665356 /* AppDelegate.m */; };
+		1968A94722868B5400665356 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A94622868B5400665356 /* FirstViewController.m */; };
+		1968A94A22868B5400665356 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A94922868B5400665356 /* SecondViewController.m */; };
+		1968A94D22868B5400665356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1968A94B22868B5400665356 /* Main.storyboard */; };
+		1968A94F22868B5500665356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1968A94E22868B5500665356 /* Assets.xcassets */; };
+		1968A95222868B5500665356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1968A95022868B5500665356 /* LaunchScreen.storyboard */; };
+		1968A95522868B5500665356 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A95422868B5500665356 /* main.m */; };
+		1968A95F22868B5500665356 /* MeanWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A95E22868B5500665356 /* MeanWalletTests.m */; };
+		1968A96A22868B5500665356 /* MeanWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A96922868B5500665356 /* MeanWalletUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1968A95B22868B5500665356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1968A93722868B5400665356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1968A93E22868B5400665356;
+			remoteInfo = MeanWallet;
+		};
+		1968A96622868B5500665356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1968A93722868B5400665356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1968A93E22868B5400665356;
+			remoteInfo = MeanWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1968A93F22868B5400665356 /* MeanWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeanWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1968A94222868B5400665356 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1968A94322868B5400665356 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1968A94522868B5400665356 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		1968A94622868B5400665356 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1968A94822868B5400665356 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1968A94922868B5400665356 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1968A94C22868B5400665356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1968A94E22868B5500665356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1968A95122868B5500665356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1968A95322868B5500665356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1968A95422868B5500665356 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1968A95A22868B5500665356 /* MeanWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeanWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1968A95E22868B5500665356 /* MeanWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeanWalletTests.m; sourceTree = "<group>"; };
+		1968A96022868B5500665356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1968A96522868B5500665356 /* MeanWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeanWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1968A96922868B5500665356 /* MeanWalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeanWalletUITests.m; sourceTree = "<group>"; };
+		1968A96B22868B5500665356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1968A93C22868B5400665356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A95722868B5500665356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A96222868B5500665356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1968A93622868B5400665356 = {
+			isa = PBXGroup;
+			children = (
+				1968A94122868B5400665356 /* MeanWallet */,
+				1968A95D22868B5500665356 /* MeanWalletTests */,
+				1968A96822868B5500665356 /* MeanWalletUITests */,
+				1968A94022868B5400665356 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1968A94022868B5400665356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1968A93F22868B5400665356 /* MeanWallet.app */,
+				1968A95A22868B5500665356 /* MeanWalletTests.xctest */,
+				1968A96522868B5500665356 /* MeanWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1968A94122868B5400665356 /* MeanWallet */ = {
+			isa = PBXGroup;
+			children = (
+				1968A94222868B5400665356 /* AppDelegate.h */,
+				1968A94322868B5400665356 /* AppDelegate.m */,
+				1968A94522868B5400665356 /* FirstViewController.h */,
+				1968A94622868B5400665356 /* FirstViewController.m */,
+				1968A94822868B5400665356 /* SecondViewController.h */,
+				1968A94922868B5400665356 /* SecondViewController.m */,
+				1968A94B22868B5400665356 /* Main.storyboard */,
+				1968A94E22868B5500665356 /* Assets.xcassets */,
+				1968A95022868B5500665356 /* LaunchScreen.storyboard */,
+				1968A95322868B5500665356 /* Info.plist */,
+				1968A95422868B5500665356 /* main.m */,
+			);
+			path = MeanWallet;
+			sourceTree = "<group>";
+		};
+		1968A95D22868B5500665356 /* MeanWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				1968A95E22868B5500665356 /* MeanWalletTests.m */,
+				1968A96022868B5500665356 /* Info.plist */,
+			);
+			path = MeanWalletTests;
+			sourceTree = "<group>";
+		};
+		1968A96822868B5500665356 /* MeanWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1968A96922868B5500665356 /* MeanWalletUITests.m */,
+				1968A96B22868B5500665356 /* Info.plist */,
+			);
+			path = MeanWalletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1968A93E22868B5400665356 /* MeanWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1968A96E22868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWallet" */;
+			buildPhases = (
+				1968A93B22868B5400665356 /* Sources */,
+				1968A93C22868B5400665356 /* Frameworks */,
+				1968A93D22868B5400665356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeanWallet;
+			productName = MeanWallet;
+			productReference = 1968A93F22868B5400665356 /* MeanWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1968A95922868B5500665356 /* MeanWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1968A97122868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWalletTests" */;
+			buildPhases = (
+				1968A95622868B5500665356 /* Sources */,
+				1968A95722868B5500665356 /* Frameworks */,
+				1968A95822868B5500665356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1968A95C22868B5500665356 /* PBXTargetDependency */,
+			);
+			name = MeanWalletTests;
+			productName = MeanWalletTests;
+			productReference = 1968A95A22868B5500665356 /* MeanWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1968A96422868B5500665356 /* MeanWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1968A97422868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWalletUITests" */;
+			buildPhases = (
+				1968A96122868B5500665356 /* Sources */,
+				1968A96222868B5500665356 /* Frameworks */,
+				1968A96322868B5500665356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1968A96722868B5500665356 /* PBXTargetDependency */,
+			);
+			name = MeanWalletUITests;
+			productName = MeanWalletUITests;
+			productReference = 1968A96522868B5500665356 /* MeanWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1968A93722868B5400665356 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "MeanFan Moo";
+				TargetAttributes = {
+					1968A93E22868B5400665356 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1968A95922868B5500665356 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1968A93E22868B5400665356;
+					};
+					1968A96422868B5500665356 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1968A93E22868B5400665356;
+					};
+				};
+			};
+			buildConfigurationList = 1968A93A22868B5400665356 /* Build configuration list for PBXProject "MeanWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1968A93622868B5400665356;
+			productRefGroup = 1968A94022868B5400665356 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1968A93E22868B5400665356 /* MeanWallet */,
+				1968A95922868B5500665356 /* MeanWalletTests */,
+				1968A96422868B5500665356 /* MeanWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1968A93D22868B5400665356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1968A95222868B5500665356 /* LaunchScreen.storyboard in Resources */,
+				1968A94F22868B5500665356 /* Assets.xcassets in Resources */,
+				1968A94D22868B5400665356 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A95822868B5500665356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A96322868B5500665356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1968A93B22868B5400665356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1968A94A22868B5400665356 /* SecondViewController.m in Sources */,
+				1968A94422868B5400665356 /* AppDelegate.m in Sources */,
+				1968A95522868B5500665356 /* main.m in Sources */,
+				1968A94722868B5400665356 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A95622868B5500665356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1968A95F22868B5500665356 /* MeanWalletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1968A96122868B5500665356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1968A96A22868B5500665356 /* MeanWalletUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1968A95C22868B5500665356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1968A93E22868B5400665356 /* MeanWallet */;
+			targetProxy = 1968A95B22868B5500665356 /* PBXContainerItemProxy */;
+		};
+		1968A96722868B5500665356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1968A93E22868B5400665356 /* MeanWallet */;
+			targetProxy = 1968A96622868B5500665356 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1968A94B22868B5400665356 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1968A94C22868B5400665356 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1968A95022868B5500665356 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1968A95122868B5500665356 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1968A96C22868B5500665356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1968A96D22868B5500665356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1968A96F22868B5500665356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1968A97022868B5500665356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1968A97222868B5500665356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeanWallet.app/MeanWallet";
+			};
+			name = Debug;
+		};
+		1968A97322868B5500665356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeanWallet.app/MeanWallet";
+			};
+			name = Release;
+		};
+		1968A97522868B5500665356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeanWallet;
+			};
+			name = Debug;
+		};
+		1968A97622868B5500665356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeanWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mean.MeanWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeanWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1968A93A22868B5400665356 /* Build configuration list for PBXProject "MeanWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1968A96C22868B5500665356 /* Debug */,
+				1968A96D22868B5500665356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1968A96E22868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1968A96F22868B5500665356 /* Debug */,
+				1968A97022868B5500665356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1968A97122868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1968A97222868B5500665356 /* Debug */,
+				1968A97322868B5500665356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1968A97422868B5500665356 /* Build configuration list for PBXNativeTarget "MeanWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1968A97522868B5500665356 /* Debug */,
+				1968A97622868B5500665356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1968A93722868B5400665356 /* Project object */;
+}
