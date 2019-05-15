@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "api/ServerCommManager.h"
 
 @interface FirstViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[ServerCommManager instance] loginAs:@"meantest" password:@"test123456"];
 }
 
 

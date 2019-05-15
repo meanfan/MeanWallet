@@ -16,6 +16,8 @@
 		1968A95522868B5500665356 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A95422868B5500665356 /* main.m */; };
 		1968A95F22868B5500665356 /* MeanWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A95E22868B5500665356 /* MeanWalletTests.m */; };
 		1968A96A22868B5500665356 /* MeanWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A96922868B5500665356 /* MeanWalletUITests.m */; };
+		1968A979228BB63400665356 /* ServerCommManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A978228BB63400665356 /* ServerCommManager.m */; };
+		1968A97E228C50C300665356 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968A97D228C50C300665356 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		1968A96522868B5500665356 /* MeanWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeanWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1968A96922868B5500665356 /* MeanWalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeanWalletUITests.m; sourceTree = "<group>"; };
 		1968A96B22868B5500665356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1968A977228BB63400665356 /* ServerCommManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerCommManager.h; sourceTree = "<group>"; };
+		1968A978228BB63400665356 /* ServerCommManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerCommManager.m; sourceTree = "<group>"; };
+		1968A97C228C50C300665356 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1968A97D228C50C300665356 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		1968A94122868B5400665356 /* MeanWallet */ = {
 			isa = PBXGroup;
 			children = (
+				1968A97A228BB8AD00665356 /* api */,
 				1968A94222868B5400665356 /* AppDelegate.h */,
 				1968A94322868B5400665356 /* AppDelegate.m */,
 				1968A94522868B5400665356 /* FirstViewController.h */,
@@ -111,6 +118,8 @@
 				1968A94822868B5400665356 /* SecondViewController.h */,
 				1968A94922868B5400665356 /* SecondViewController.m */,
 				1968A94B22868B5400665356 /* Main.storyboard */,
+				1968A97C228C50C300665356 /* LoginViewController.h */,
+				1968A97D228C50C300665356 /* LoginViewController.m */,
 				1968A94E22868B5500665356 /* Assets.xcassets */,
 				1968A95022868B5500665356 /* LaunchScreen.storyboard */,
 				1968A95322868B5500665356 /* Info.plist */,
@@ -135,6 +144,15 @@
 				1968A96B22868B5500665356 /* Info.plist */,
 			);
 			path = MeanWalletUITests;
+			sourceTree = "<group>";
+		};
+		1968A97A228BB8AD00665356 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				1968A977228BB63400665356 /* ServerCommManager.h */,
+				1968A978228BB63400665356 /* ServerCommManager.m */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1968A94A22868B5400665356 /* SecondViewController.m in Sources */,
+				1968A979228BB63400665356 /* ServerCommManager.m in Sources */,
+				1968A97E228C50C300665356 /* LoginViewController.m in Sources */,
 				1968A94422868B5400665356 /* AppDelegate.m in Sources */,
 				1968A95522868B5500665356 /* main.m in Sources */,
 				1968A94722868B5400665356 /* FirstViewController.m in Sources */,
