@@ -11,7 +11,6 @@
 @interface LoginViewController()
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 
@@ -30,7 +29,27 @@
         //notify
     }else{
         //login
+        [[ServerCommManager instance]loginAs:username password:password delegate:self];
+        
     }
+}
+
+/* impl ServerCommManagerDelegate*/
+-(void)returnWithStatusCode:(long)statusCode withDict:(NSDictionary*)dict{
+    NSLog(@"[login] responseStatusCode:%ld\ndata:\n %@\n--------------",statusCode,dict);
+    if(statusCode == 200){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self performSegueWithIdentifier:@"showMain" sender:nil];
+        });
+        
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"login failed" message:dict[@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+        });
+    }
+    
+
 }
 
 @end

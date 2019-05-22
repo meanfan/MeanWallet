@@ -60,6 +60,7 @@
 		1968A978228BB63400665356 /* ServerCommManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerCommManager.m; sourceTree = "<group>"; };
 		1968A97C228C50C300665356 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1968A97D228C50C300665356 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1968A9BD228EB30000665356 /* ServerCommManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerCommManagerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 			children = (
 				1968A977228BB63400665356 /* ServerCommManager.h */,
 				1968A978228BB63400665356 /* ServerCommManager.m */,
+				1968A9BD228EB30000665356 /* ServerCommManagerDelegate.h */,
 			);
 			path = api;
 			sourceTree = "<group>";

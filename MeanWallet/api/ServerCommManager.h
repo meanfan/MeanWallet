@@ -8,12 +8,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ServerCommManagerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ServerCommManager : NSObject<NSURLSessionDataDelegate>
 + (ServerCommManager *)instance;
-- (NSString*)loginAs:(NSString*)username password:(NSString*)password;
+- (void)loginAs:(NSString*)username password:(NSString*)password delegate:(id<ServerCommManagerDelegate>)delegate;
+-(void)getBalanceWithDelegate:(id<ServerCommManagerDelegate>)delegate;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,8 @@
 
 @interface ServerCommManager()
 @property NSString* serverRootURLStr;
+@property NSString* userAddress;
+@property NSString* testUserAddress;
 @end
 
 @implementation ServerCommManager
@@ -22,6 +24,7 @@
     dispatch_once(&once, ^{
         instance = [[self.class alloc] init];
         instance.serverRootURLStr = @"https://t1.tempo.fan";
+        instance.testUserAddress = @"493c6b4ca883ed33b693e6811d66b3feecdb4bdb";
     });
     return instance;
 }
@@ -30,11 +33,13 @@
     NSURL *url = [NSURL URLWithString:[_serverRootURLStr stringByAppendingString:urlStr]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:method];
-    request.HTTPBody = [json dataUsingEncoding:NSUTF8StringEncoding];
+    if(json!=nil || json.length > 0){
+        request.HTTPBody = [json dataUsingEncoding:NSUTF8StringEncoding];
+    }
     return request;
 }
 
-- (NSString*)loginAs:(NSString*)username password:(NSString*)password {
+- (void)loginAs:(NSString*)username password:(NSString*)password delegate:(id<ServerCommManagerDelegate>)delegate{
     //init request
     NSString * relativeURLStr = @"/user/login";
     NSString * jsonBody = [NSString stringWithFormat:@"userName=%@&pwd=%@",username,password];
@@ -43,12 +48,36 @@
     //init session
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                 //resulve data
-                 NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                 NSLog(@"%@",dict);
-             }];
+         //resulve data using delegate
+        NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        if(httpResponse.statusCode == 200){
+            self.userAddress = dict[@"address"];
+        }
+        [delegate returnWithStatusCode:httpResponse.statusCode withDict:dict];
+    }];
     //run session task
     [dataTask resume];
-    return nil;
 }
+
+-(void)getBalanceWithDelegate:(id<ServerCommManagerDelegate>)delegate{
+    // ! use testUserBalance for test
+    // NSString * relativeURLStr = [@"/account/balance/" stringByAppendingString:self.userAddress];
+    NSString * relativeURLStr = [@"/account/balance/" stringByAppendingString:self.testUserAddress];
+    NSMutableURLRequest* request = [self wireRequestWithRelativeURL:relativeURLStr httpMethod:@"GET" jsonBody:nil];
+    
+    //init session
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        //resulve data using delegate
+        NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        [delegate returnWithStatusCode:httpResponse.statusCode withArray:array];
+        
+    }];
+    //run session task
+    [dataTask resume];
+}
+    
+
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LoginViewController : UIViewController
+#import "api/ServerCommManager.h"
+#import "api/ServerCommManagerDelegate.h"
+#import "FirstViewController.h"
+@interface LoginViewController : UIViewController<ServerCommManagerDelegate>
 
 @end

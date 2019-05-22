@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FirstViewController : UIViewController
+#import "api/ServerCommManager.h"
+@interface FirstViewController : UIViewController<ServerCommManagerDelegate>
 
 
 @end
