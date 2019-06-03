@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (ServerCommManager *)instance;
 - (void)loginAs:(NSString*)username password:(NSString*)password delegate:(id<ServerCommManagerDelegate>)delegate;
 -(void)getBalanceWithDelegate:(id<ServerCommManagerDelegate>)delegate;
+-(void)getLedgerWithDelegate:(id<ServerCommManagerDelegate>)delegate;
 @end
 
 NS_ASSUME_NONNULL_END

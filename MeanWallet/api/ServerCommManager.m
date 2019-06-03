@@ -61,9 +61,28 @@
 }
 
 -(void)getBalanceWithDelegate:(id<ServerCommManagerDelegate>)delegate{
-    // ! use testUserBalance for test
+    // ! use testUser for test
     // NSString * relativeURLStr = [@"/account/balance/" stringByAppendingString:self.userAddress];
     NSString * relativeURLStr = [@"/account/balance/" stringByAppendingString:self.testUserAddress];
+    NSMutableURLRequest* request = [self wireRequestWithRelativeURL:relativeURLStr httpMethod:@"GET" jsonBody:nil];
+    
+    //init session
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        //resulve data using delegate
+        NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        [delegate returnWithStatusCode:httpResponse.statusCode withArray:array];
+        
+    }];
+    //run session task
+    [dataTask resume];
+}
+
+-(void)getLedgerWithDelegate:(id<ServerCommManagerDelegate>)delegate{
+    // ! use testUser for test
+    // NSString * relativeURLStr = [@"/ledger/" stringByAppendingString:self.userAddress];
+    NSString * relativeURLStr = [@"/ledger/" stringByAppendingString:self.testUserAddress];
     NSMutableURLRequest* request = [self wireRequestWithRelativeURL:relativeURLStr httpMethod:@"GET" jsonBody:nil];
     
     //init session
